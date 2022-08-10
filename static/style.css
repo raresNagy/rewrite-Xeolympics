@@ -1,8 +1,68 @@
+:root {
+	--row2: #030d25;
+	--fac-cu-capu: #03123b;
+	--font-color: #d1e5ee;
+	--fite: #172446;
+	--color-accent: #020a20;
+	--blue1: #d1e5ee;
+	--nav-blue: #172446;
+	--color-background: #172446;
+	--grayish-blue: #464866;
+	--gray: #aaabb8;
+	--lapis-lazuli: #2e9cca;
+	--aqua-blue: #29648a;
+	--font-programator: "Ubuntu Mono", monospace;
+	--font-programator2: "FR73PixelW00-Regular";
+	--fontcolor: #d1e5ee;
+	--fontcolor2: #020a20;
+	--fontcolor3: #172446;
+	--fontcolor-textarea: #d1e5ee;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: royalblue;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 3.9rem;
+	background-color: var(--nav-blue);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+nav ul li {
+	color: var(--fontcolor);
+	margin: 0 6px;
 }
 
 #logo {
-	height: 5rem;
+	height: 110px;
+	width: auto;
+}
+
+.leaderboard-button {
+	display: flex;
+	align-items: center;
+	background-color: var(--font-color);
+	border-radius: 15px;
+	padding: 3px;
+	color: var(--fontcolor3);
+}
+
+.trophy {
+	height: 30px;
 	width: auto;
 }
