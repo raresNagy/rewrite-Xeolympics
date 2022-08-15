@@ -24,7 +24,11 @@
 }
 
 body {
-	background-color: royalblue;
+	background-color: #41819d;
+	background-image: url(../images/fundal.svg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
 }
@@ -68,10 +72,82 @@ nav ul li {
 .leaderboard-button a {
 	display: flex;
 	align-items: center;
-
 }
 
 .trophy {
 	height: 30px;
 	width: auto;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	background-color: var(--color-accent);
+	width: 30%;
+	height: 25vh;
+	border-radius: 20px;
+	text-align: center;
+	margin-top: 25vh;
+	margin-bottom: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	flex: 0 1 auto;
+	background-color: var(--color-background);
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	font-family: "FR73PixelW00-Regular";
+	color: var(--fontcolor2);
+	font-size: small;
+	color: white;
+}
+
+input[type="number"] {
+	width: 15vw;
+}
+
+input[type="password"] {
+	width: 10vw;
+}
+
+/*Hide input number row*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+form button {
+	color: var(--fontcolor2);
+	font-family: inherit;
+	background-color: #d1e5ee;
+	padding: 0.3rem 3.4rem;
+	box-shadow: 0 0 0 black;
+	transition: all 0.2s;
+	width: 200px;
+	text-align: center;
+	float: right;
+}
+
+form button:hover {
+	box-shadow: 0.4rem 0.4rem 0 black;
+	transform: translate(-0.4rem, -0.4rem);
 }
