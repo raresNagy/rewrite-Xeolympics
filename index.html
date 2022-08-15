@@ -14,17 +14,31 @@
 			<div class="right">
 				<ul class="nav-info">
 					<li class="leaderboard-button">
-						<img
-							class="trophy"
-							src="./images/trophy.svg"
-							alt="a trophy"
-						/>
-						Leaderboard
+						<a href="./templates/clasament.html">
+							<img
+								class="trophy"
+								src="./images/trophy.svg"
+								alt="a trophy icon"
+							/>
+							Leaderboard
+						</a>
 					</li>
 					<li>Username</li>
-					<li></li>
 				</ul>
 			</div>
 		</nav>
+
+		<main>
+			<form action="home" method="post">
+				<ul>
+					<li>
+						<label for="number">Your team's number:</label>
+						<input type="number" id="number" name="user_number" />
+					</li>
+					<label for="password">Password:</label>
+					<input type="password" name="user_password" id="password" />
+				</ul>
+			</form>
+		</main>
 	</body>
 </html>
